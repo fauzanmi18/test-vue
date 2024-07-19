@@ -134,7 +134,8 @@ const routes = [
 
 console.log(`ie history`, import.meta.env.VITE_BASE_URL)
 const router = createRouter({
-  history: createWebHistory(import.meta.env.VITE_BASE_URL),
+  // history: createWebHistory(import.meta.env.VITE_BASE_URL),
+  history: createWebHistory(),
   routes,
   scrollBehavior(to, from, savedPosition) {
     return savedPosition || { left: 0, top: 0 }
